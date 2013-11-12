@@ -1,0 +1,27 @@
+{
+  "name": "testling-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tape": "",
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "iexplore": [ 9, 10 ],
+      "firefox": [ 23, 24, 25, nightly ],
+      "chrome": [ 29, 'canary' ],
+      "safari": [ 5.1, 6.0 ],
+      "ipad": [ 6.0 ],
+      "iphone": [ 6.0 ],
+      "opera": [ 15, 'next' ]
+      "android-browser": [ 4.2 ]
+    }
+  },
+  "author": "",
+  "license": "MIT"
+}
