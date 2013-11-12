@@ -1,10 +1,10 @@
-var test = require('tape');
+var assert = require("assert");
 
-test('PeerConnection', function (t) {
-    t.plan(1);
-
-    var prefixed = typeof(webkitRTCPeerConnection) !== 'undefined';
-    var unprefixed = typeof(RTCPeerConnection) !== 'undefined';
-    console.log(prefixed, unprefixed, prefixed || unprefixed);
-    t.ok(prefixed || unprefixed, "RTCPeerConnection exists");
+describe('Array', function () {
+    describe('RTCPeerConnection', function () {
+        it('should have prefixed RT', function () {
+            var prefixed = typeof(webkitRTCPeerConnection) !== 'undefined';
+            assert(prefixed);
+        });
+    });
 });
